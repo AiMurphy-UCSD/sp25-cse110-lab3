@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Normally link is used to link a styleshete but we arent using that in this lab -->
+    <link rel="icon" href="coin.png" />
+    <title>Lab 2 Aidan Murphy</title>
+  </head>
+  <!-- Main Content of an HTML document -->
+   <header><h1>Aidan Murphy</h1></header>
+   <h2>CSE 110 Lab 2 Assignment</h2>
+   <h3>Due Tuesday April 15 at 11:59pm</h3>
+
+   <hr />
+
+   <section>
+    <h3>Navigation</h3>
+    <p>
+      This section provides helpful navigation links.
+    </p>
+    <nav class="navi">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <ol>
+        <li><b>Bold</b></li>
+        <li><strong>Strong</strong></li>
+        <li><i>Italic</i></li>
+        <li><em>Emphasis</em></li>
+      </ol>
+    </nav>
+   </section>
+
+   <figure>
+    <figcaption>Listen to a song:</figcaption>
+    <audio controls src="Mount Kimbie - Boxing (featuring King Krule).mp3"></audio>
+    <br>
+    <details>
+      <summary>Song Name</summary>
+      <br>
+      Boxing by Mount Kimbie
+    </details>
+  </figure>
+   
+   <div class="dog">
+    <img
+      src="dog.png"
+      alt="A puppy running." />
+    <p><i>A cute <span class="animal"><strong>dog</strong></span></i></p>
+  </div>
+  <br>
+
+  <video controls width="250">
+    <source src="gnome.mp4" type="video/mp4" />
+  </video>
+<br><br><br>
+
+<form>
+  <fieldset>
+    <legend>FORM</legend>
+  <div class="form-example">
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <div class="form-example">
+    <label for="email">Enter your email: </label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Subscribe!" />
+  </div>
+  <button type="button">ANOTHER BUTTON</button>
+  <br>
+  <br>
+  <label for="story">Tell us your story:</label>
+  <br>
+  <textarea id="story" name="story" rows="5" cols="33">Text</textarea>
+  <br>
+  <label for="ice-cream-choice">Choose a flavor:</label>
+  <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+  <datalist id="ice-cream-flavors">
+    <option value="Chocolate"></option>
+    <option value="Coconut"></option>
+    <option value="Mint"></option>
+    <option value="Strawberry"></option>
+    <option value="Vanilla"></option>
+  </datalist>
+  <br>
+  <label for="pet-select">Choose a pet:</label>
+
+  <select name="pets" id="pet-select">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+    <option value="hamster">Hamster</option>
+    <option value="parrot">Parrot</option>
+    <option value="spider">Spider</option>
+    <option value="goldfish">Goldfish</option>
+  </select>
+  </fieldset>
+</form>
+
+  <hr />
+   <footer>A website by Aidan Murphy</footer>
+  <body>
+  </body>
+</html>
