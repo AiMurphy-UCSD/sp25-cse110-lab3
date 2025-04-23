@@ -1,1 +1,176 @@
+/*Start of CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Condensed+One&display=swap');
+
+@media (min-width: 1250px) {
+
+    *{  
+        text-align: center;
+        justify-content: center;
+    }
+    body {
+      background-color: grey;
+      margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+    
+    strong, em{
+        color: white;
+    }
+
+    ul > li[class="textstylestest"]{
+        border: 2px;
+        border-style: dashed;
+        padding: 5px;
+        border-color: black;
+    }
+
+    h1 {
+        position: static;
+        color: greenyellow;
+        background-color: black;
+        border: 4mm solid greenyellow;
+        border-style: double;
+        border-radius: 5px;
+        border-width: 20px;
+        padding: 20pt 10pt 20pt 10pt;
+        margin: 10px 10px 10px 10px;
+        text-align: center;
+        text-decoration: underline  dotted;
+      }
+    
+    @property --box-color {
+        syntax: "<color>";
+        initial-value: greenyellow;
+        inherits: false;
+    }
+    
+    h2 {
+        --box-color: supercoolred;
+        background-color: var(--box-color);
+        text-align: center;
+    }
+    
+    h3 {
+        --box-color: supercoolred;
+        background-color: var(--box-color);
+        text-align: center;
+    }
+
+    #duedate{
+        border-width: 3px;
+        border-style: dotted;
+        border-color: white;
+      }
+    
+    img{
+        border-radius: 50%;
+        max-width: 400px;
+        min-width: 300px;
+        width: 350px;
+        height: 300px;
+        margin: auto;
+    }
+    
+    p{
+        text-align: center;
+    }
+    
+    figure{
+        justify-items: center;
+    }
+    
+    figure details{
+        justify-items: center;
+    }
+    
+    nav{
+        justify-items: center;
+    }
+    
+    .dog{
+        justify-items: center;
+    }
+    
+    .videos{
+        justify-self: center;
+        display: none;
+    }
+    
+    .navi{
+        font-size: 10px;
+    }
+    
+    ul{
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        column-gap: 30px;
+    }
+    
+    ol{
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 100px;
+        justify-items: center;
+        grid-template-rows: auto;
+    }
+    
+    form{
+        display: block;
+        justify-items: center;
+        position: relative;
+        left: 100px;
+    }
+    
+    button:hover{
+        background-color: blueviolet;
+        color: white;
+    }
+    
+    button:active{
+        background-color: purple;
+        color: white;
+    }
+    
+    a:hover{
+        color: blueviolet;
+    }
+
+    h3 ~ p {
+        font-weight: bold;
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em;
+      }
+
+    nav.navi{
+        padding: 10px;
+    }
+
+    h2:has(+ h3) {
+        margin: 0 0 0.25rem 0;
+        text-decoration: underline;
+      }
+
+      .navlinks > a:hover,
+      .navlinks > a:focus {
+        color: ivory;
+        background-color: tomato;
+        }
+
+  }
+  body {
+    font-family: 'Special Gothic Condensed One';
+  }
+
+  
+
 
