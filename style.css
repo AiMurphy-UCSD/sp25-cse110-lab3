@@ -24,7 +24,7 @@
         color: white;
     }
 
-    li[class="textstylestest"]{
+    ul > li[class="textstylestest"]{
         border: 2px;
         border-style: dashed;
         padding: 5px;
@@ -72,7 +72,7 @@
     img{
         border-radius: 50%;
         max-width: 400px;
-        min-width: 300;
+        min-width: 300px;
         width: 350px;
         height: 300px;
         margin: auto;
@@ -82,11 +82,11 @@
         text-align: center;
     }
     
-    figure {
+    figure{
         justify-items: center;
     }
     
-    details{
+    figure details{
         justify-items: center;
     }
     
@@ -143,6 +143,28 @@
     a:hover{
         color: blueviolet;
     }
+
+    h3 ~ p {
+        font-weight: bold;
+        background-color: #333;
+        color: #fff;
+        padding: 0.5em;
+      }
+
+    nav.navi{
+        padding: 10px;
+    }
+
+    h2:has(+ h3) {
+        margin: 0 0 0.25rem 0;
+        text-decoration: underline;
+      }
+
+      .navlinks > a:hover,
+      .navlinks > a:focus {
+        color: ivory;
+        background-color: tomato;
+        }
 
   }
   body {
